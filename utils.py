@@ -37,9 +37,9 @@ def model_predict(email):
     if email == "":
         return ""
     # 1. preprocess
-    transformed_sms = transform_text(input_sms)
+    transformed_email = transform_text(email)
     # 2. vectorize
-    vector_input = tfidf.transform([transformed_sms])
+    vector_input = tfidf.transform([transformed_email])
     # 3. predict
     prediction = model.predict(vector_input)[0]
     prediction = 1 if prediction == 1 else -1
