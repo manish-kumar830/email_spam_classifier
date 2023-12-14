@@ -4,5 +4,6 @@ Flask==2.2.5
 gunicorn==20.1.0
 numpy
 pickle-mixin
+sklearn
 nltk
 Werkzeug==2.2.3
